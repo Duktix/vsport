@@ -439,7 +439,7 @@ role="navigation" >
 	
 		
 	<div class="row"><div class="col-md-12">
-					<div class="widget isotope_gallery_widget isotope_gallery_widget_1 hasfilter" id="isotope_gallery_widget_5f482e723d927">
+					<div class="widget isotope_gallery_widget isotope_gallery_widget_1 hasfilter" id="isotope_gallery_widget_5f482eaf928fb">
 			<ul class="isotope-filter text-right">
 												<li><a href="#" data-filter=".all">All</a></li>
 									<li><a href="#" data-filter=".architecture">Architecture</a></li>
@@ -506,9 +506,9 @@ role="navigation" >
 	<script>
 	var $grid = '';
 	jQuery(document).ready(function($){
-		$('#isotope_gallery_widget_5f482e723d927 .grid-items').imagesLoaded().done( function( instance ) {
+		$('#isotope_gallery_widget_5f482eaf928fb .grid-items').imagesLoaded().done( function( instance ) {
 			setTimeout(function(){
-				$grid = $('#isotope_gallery_widget_5f482e723d927 .grid-items').isotope({
+				$grid = $('#isotope_gallery_widget_5f482eaf928fb .grid-items').isotope({
 						itemSelector: '.grid-item',
 						layoutMode: 'packery',
 						percentPosition: true,
@@ -516,17 +516,17 @@ role="navigation" >
 							columnWidth: '.grid-item',
 						}
 					});
-				$('#isotope_gallery_widget_5f482e723d927').addClass('loaded');
+				$('#isotope_gallery_widget_5f482eaf928fb').addClass('loaded');
 
 			 }, 500);
 			 setTimeout(function(){
 				$grid.isotope('layout');
 			}, 500);
-			$('#isotope_gallery_widget_5f482e723d927 .isotope-filter a').click(function(){
-				$('#isotope_gallery_widget_5f482e723d927 .isotope-filter a').removeClass('active');
+			$('#isotope_gallery_widget_5f482eaf928fb .isotope-filter a').click(function(){
+				$('#isotope_gallery_widget_5f482eaf928fb .isotope-filter a').removeClass('active');
 				$(this).addClass('active');
 			  var selector = $(this).attr('data-filter');
-			  var $grid = $('#isotope_gallery_widget_5f482e723d927').isotope({
+			  var $grid = $('#isotope_gallery_widget_5f482eaf928fb').isotope({
 					  filter: selector,
 						itemSelector: '.grid-item',
 						layoutMode: 'packery',
